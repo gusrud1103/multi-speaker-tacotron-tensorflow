@@ -25,7 +25,7 @@ Samples audios (in Korean) can be found [here](http://carpedm20.github.io/tacotr
 After preparing [Tensorflow](https://www.tensorflow.org/install/), install prerequisites with:
 
     pip3 install -r requirements.txt
-    python -c "import nltk; nltk.download('punkt')"
+    python3 -c "import nltk; nltk.download('punkt')"
 
 If you want to synthesize a speech in Korean dicrectly, follow [2-3. Download pre-trained models](#2-3-download-pre-trained-models).
 
@@ -103,7 +103,7 @@ Because the automatic generation is extremely naive, the dataset is noisy. Howev
 
 3. Finally, generate numpy files which will be used in training.
 		
-		python3 -m datasets.generate_data ./datasets/LJSpeech_1_0
+		python3 -m datasets.generate_data ./datasets/LJSpeech_1_0/alignment.json
 		
 
 ### 3. Train a model
